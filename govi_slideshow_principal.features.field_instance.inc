@@ -15,7 +15,7 @@ function govi_slideshow_principal_field_default_field_instances() {
     'bundle' => 'main_slideshow',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Digite la información correspondiente a la imagen ',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -36,17 +36,18 @@ function govi_slideshow_principal_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'body',
-    'label' => 'Body',
-    'required' => FALSE,
+    'label' => 'Descripción',
+    'required' => 1,
     'settings' => array(
-      'display_summary' => TRUE,
+      'display_summary' => 1,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 20,
+        'rows' => 10,
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
@@ -59,7 +60,7 @@ function govi_slideshow_principal_field_default_field_instances() {
     'bundle' => 'main_slideshow',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Digite el vinculo o enlace para la imagen ',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -78,7 +79,7 @@ function govi_slideshow_principal_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_link',
     'label' => 'Enlace',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
       'attributes' => array(
@@ -86,7 +87,7 @@ function govi_slideshow_principal_field_default_field_instances() {
         'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
-        'target' => 'default',
+        'target' => 'user',
         'title' => '',
       ),
       'display' => array(
@@ -115,7 +116,7 @@ function govi_slideshow_principal_field_default_field_instances() {
   $field_instances['node-main_slideshow-field_main_slideshow_image'] = array(
     'bundle' => 'main_slideshow',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Adjunte la imagen ',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -144,8 +145,8 @@ function govi_slideshow_principal_field_default_field_instances() {
       'file_directory' => '',
       'file_extensions' => 'png jpg jpeg',
       'max_filesize' => '2 MB',
-      'max_resolution' => '895x255',
-      'min_resolution' => '895x255',
+      'max_resolution' => '970x270',
+      'min_resolution' => '970x270',
       'title_field' => 1,
       'user_register_form' => FALSE,
     ),
@@ -163,8 +164,11 @@ function govi_slideshow_principal_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Adjunte la imagen ');
   t('Banner destacado');
-  t('Body');
+  t('Descripción');
+  t('Digite el vinculo o enlace para la imagen ');
+  t('Digite la información correspondiente a la imagen ');
   t('Enlace');
 
   return $field_instances;

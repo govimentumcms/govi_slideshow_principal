@@ -46,7 +46,7 @@ function govi_slideshow_principal_node_info() {
       'base' => 'node_content',
       'description' => t('Utilice este tipo de contenido para publicar las imágenes destacadas en la sección principal del parallax'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titulo'),
       'help' => '',
     ),
   );
