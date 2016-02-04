@@ -155,6 +155,25 @@ function govi_slideshow_principal_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $translatables['main_slideshow'] = array(
+    t('Master'),
+    t('Slideshow Principal'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Información Breve'),
+    t('Block'),
+  );
   $export['main_slideshow'] = $view;
 
   return $export;

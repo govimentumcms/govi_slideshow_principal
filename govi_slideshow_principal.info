@@ -1,7 +1,7 @@
 name = Govi Slideshow Principal
 description = Implementa característica funcional para gestionar imágenes destacadas en forma de slideshow
 core = 7.x
-package = Features
+package = Govimentum
 version = 7.x-1.0-beta1
 project = govi_slideshow_principal
 dependencies[] = ctools
