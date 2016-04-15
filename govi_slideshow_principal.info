@@ -23,3 +23,4 @@ features[field_instance][] = node-main_slideshow-field_main_slideshow_image
 features[image][] = main_slideshow
 features[node][] = main_slideshow
 features[views_view][] = main_slideshow
+project path = sites/all/modules/features
